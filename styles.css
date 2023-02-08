@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+}
+#messages {
+  padding-bottom: 200px;
+  overflow: auto;
+}
+form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #000;
+}
+input {
+  border: 1px solid #555;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+textarea {
+  border: 1px solid #555;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+.name {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #444;
+  color: #fff;
+}
+.nameText {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+.name::placeholder {
+  color: #fff;
+}
+.bubble {
+  border-radius: 20px;
+  background-color: #0c6;
+  margin: 4px;
+  padding: 5px 10px;
+  display: inline-block;
+  max-width: 45%;
+  text-align: left;
+}
+.message-row.mine {
+  text-align: right;
+}
+.message-row.mine .bubble {
+  background-color: #299;
+}
